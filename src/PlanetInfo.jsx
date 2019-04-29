@@ -8,7 +8,7 @@ class PlanetInfo extends Component {
             expanded: false,
         }
         this.open = this.open.bind(this)
-        this.close = this.close.bind(this)
+        this.closed = this.closed.bind(this)
     }
 
 
@@ -21,7 +21,7 @@ class PlanetInfo extends Component {
     }
     render() {
         const info = this.props.planetInfo;
-        if(!this.state.expanded){
+        if(!this.state.expanded) {
             return <p className="btn btn-info" onClick={this.open}>Show info</p>
         }
 
