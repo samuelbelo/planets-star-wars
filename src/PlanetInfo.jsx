@@ -7,18 +7,22 @@ class PlanetInfo extends Component {
         this.state = {
             expanded: false,
         }
-        this.open = this.open.bind(this)
-        this.closed = this.closed.bind(this)
+        this.open = this.open.bind(this);
+        this.closed = this.closed.bind(this);
     }
-
-
+    
+    
+    
     open() {
         this.setState( { expanded: !this.state.expanded } )
     }
     
+
+
     closed() {
         this.setState( { expanded: !this.state.expanded } )
     }
+
     render() {
         const info = this.props.planetInfo;
         if(!this.state.expanded) {
@@ -27,7 +31,7 @@ class PlanetInfo extends Component {
 
         return (
             <div>
-                <p onClick={this.close}>Hide info</p>
+                <p className="btn btn-info" onClick={this.close}>Hide info</p>
                 <ul>
                     <li><h2>Population: {info.population}</h2></li>
                     <li><h2>Climate: {info.climate}</h2></li>
@@ -35,7 +39,7 @@ class PlanetInfo extends Component {
                 </ul>
             </div>
         )
-
+        
         
     }
 }
