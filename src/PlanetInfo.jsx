@@ -11,14 +11,9 @@ class PlanetInfo extends Component {
         this.closed = this.closed.bind(this);
     }
     
-    
-    
     open() {
         this.setState( { expanded: !this.state.expanded } )
     }
-    
-
-
     closed() {
         this.setState( { expanded: !this.state.expanded } )
     }
@@ -31,7 +26,7 @@ class PlanetInfo extends Component {
 
         return (
             <div>
-                <p className="btn btn-info" onClick={this.close}>Hide info</p>
+                <p className="btn btn-info" onClick={this.open}>Hide info</p>
                 <ul>
                     <li><h2>Population: {info.population}</h2></li>
                     <li><h2>Climate: {info.climate}</h2></li>
