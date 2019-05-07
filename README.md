@@ -12,7 +12,7 @@ Simple React interface for searching the Star Wars API. Serves no real purpose, 
 ## Dependencies
 * Node / NPM - Tested with Node v7.2.0.
 * create-react-app - `npm install create-react-app`
-* `npm install` - to install project dependencies.
+* `npm install -g` - to install project dependencies.
 By default, npm install will install all modules listed as dependencies in package.json.
 
 ## Get Started
