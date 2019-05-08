@@ -15,7 +15,7 @@ class PlanetInfo extends Component {
         this.setState( { expanded: !this.state.expanded } )
     }
     closed() {
-        this.setState( { expanded: !this.state.expanded } )
+        this.setState( { expanded: this.state.expanded } )
     }
 
     render() {
