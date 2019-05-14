@@ -25,7 +25,7 @@ class PlanetInfo extends Component {
         }
 
         return (
-            <div>
+       <div>
                 <p className="btn btn-info" onClick={this.open}>Hide info</p>
                 <ul>
                     <li><h2>Population: {info.population}</h2></li>
@@ -33,6 +33,8 @@ class PlanetInfo extends Component {
                     <li><h2>Terrain: {info.terrain}</h2></li>
                 </ul>
             </div>
+
+
         )
         
         
